@@ -25,7 +25,7 @@
                     }
                     a {
                         position: relative;
-                        top: 10px;
+                        top: 14px;
                         color: @bag-color;
                         text-transform: uppercase;
                         padding-top: 40px;
@@ -37,13 +37,23 @@
                     &:hover:before {
                         position: absolute;
                         left: 0;
-                        bottom: -4px;
+                        bottom: -2px;
                         height: 1px;
                         background:  @pd-color;
                         content: '';
-                        width: 98%;
+                        width: 100%;
                         transition: all 200ms linear 0s;
                     }
+                }
+                .text__1 {
+                    margin-left: 4px;
+                }
+                .text__2 {
+                    margin-left: -20px;
+                    margin-right: 0;
+                }
+                .text__3 {
+                    margin-left: 2px;
                 }
             }
         }
@@ -52,9 +62,10 @@
 .main__product {
     margin-top: 40px;
     &-item {
+        // border: 1px solid #ebebeb;
         position: relative;
         .col (25%);
-        padding: 0 0 35px 0;
+        padding: 0 10px 35px 10px;
         &:nth-last-child(4) {
             padding-top: 40px;
         }
@@ -67,29 +78,31 @@
         &:nth-last-child(1) {
             padding-top: 40px;
         }
-        &:nth-last-child(5) {
-            padding-top: 40px;
-        }
+        // &:nth-last-child(5) {
+        //     padding-top: 40px;
+        // }
     }
     .main__product-item:hover{
         transition-duration:0.5s;
-        border: 1px solid @ft-color;
+        border: 1px solid #e3e3e3;
+        box-shadow:0 0 10px 1px #e3e3e3;
+                
             .main__product-function {
                 display: block;
             }
     }
     &-image {
-        // img {
-        //     object-fit: contain;
-        //     object-position: 50% 50%;
-        // }
+        img {
+            object-fit: contain;
+            object-position: 50% 50%;
+        }
 
     }
     &-function {
         position: absolute;
         display: none;
-        top: 17px;
-        right: 15px;
+        top: 6px;
+        right: 20px;
     }
     &__icon {
         position: absolute;
@@ -128,12 +141,54 @@
         p {
             font-weight: 400;
             font-size: 14px;
-            margin: 21px 0 0 16px;
+            margin: 22px 0 0 19px;
         }
         span {
             font-weight: 700;
             font-size: 14px;
-            margin: 16px;
+            margin: 19px;
+        }
+        .p__2 {
+            margin: 22px 0 0 27px;
+        }
+        .span__2 {
+            margin: 27px;
+        }
+        .p__3 {
+            margin: 22px 0 0 35px;
+        }
+        .span__3 {
+            margin: 34px;
+        }
+        .p__4 {
+            margin: 22px 0 0 42px;
+        }
+        .span__4 {
+            margin: 41px;
+        } 
+        // .p__5 {
+        //     margin: 22px 0 0 27px;
+        // }
+        // .span__5 {
+        //     margin: 27px;
+        // }
+        .p__6 {
+            margin: 22px 0 0 27px;
+        }
+        .span__6 {
+            margin: 27px;
+        }
+        .p__7 {
+            margin: 22px 0 0 35px;
+        }
+        .span__7 {
+            margin: 34px;
+        }
+        .p__8 {
+            margin: 22px 0 0 42px;
+        }
+        .span__8 {
+            margin: 41px;
         }
     }
 }
