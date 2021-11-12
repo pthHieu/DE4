@@ -7,9 +7,8 @@
     position: absolute;
     top: 0;
     width: 100%;
-    .logo-mobi {
+    .top__nav {
         display: none;
-        text-align: center;
     }
     &-inner {
         .flex();
@@ -46,21 +45,27 @@
 
     }
     .form-control {
-        .flex();
-        .control-item {
-            margin-right: 27px;
-            &:last-child {
-                margin-right: 0;
+        ul {
+            .flex();
+            li {
+                i {
+                    color: @nav-color;
+                }
             }
-            &.search {
-                border-right: 1px solid @ft-color;
-                padding-right: 26px;
+            .hd__search {
+                padding-right: 27px;
             }
-            &.shopping {
-                border-right: 1px solid @ft-color;
-                padding-right: 26px;
+            .hd__shopping {
+                padding-left: 26px;
+                padding-right: 27px;
+                border-left: 2px solid @ft-color;
+                border-right: 2px solid @ft-color;
+            }
+            .hd__user {
+                padding-left: 26px;
             }
         }
+        
     }
 }
 }  

@@ -22,19 +22,27 @@
         &__icon {
             margin-top: 37px;
             margin-left: 11px;
-            font-size: 18px;
-            line-height: 30px;
-            color: @ft-color;
-            font-weight: 400;
-            i {
-                padding: 0 20px;
-                &:nth-child(2) {
-                    padding-left: 24px;
-                    padding-right: 16px;
-                }
-                &:nth-child(3) {
-                    padding-left: 22px;
-                    padding-right: 21px;
+            ul {
+                display: flex;
+                align-items: center;
+                margin-left: 454px;
+                i {
+                    font-size: 18px;
+                    line-height: 30px;
+                    color: @ft-color;
+                    font-weight: 400;
+                    padding: 0 23px;
+                    &:nth-child(2) {
+                        padding-left: 24px;
+                        padding-right: 16px;
+                    }
+                    &:nth-child(3) {
+                        padding-left: 22px;
+                        padding-right: 21px;
+                    }
+                    &:hover {
+                        color: @pd-color;
+                    }
                 }
             }
         }
@@ -55,6 +63,9 @@
                 line-height: 40px;
                 color: @ft-color;
                 font-weight: 400;
+                &:hover {
+                    color: @pd-color;
+                }
             }
             .nav__left {
                 ul {
