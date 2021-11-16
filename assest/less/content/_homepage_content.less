@@ -17,10 +17,10 @@
                     padding-bottom: 25px;
 
                 
-                    &:first-child {
+                    &:first-child { // vị trí đầu tiên
                         margin-left: 0;
                     }
-                    &:last-child {
+                    &:last-child { //vi trí cuối cùng
                         margin-right: 0;
                     }
                     a {
@@ -64,9 +64,8 @@
     &-item {
         position: relative;
         .col (25%);
-        padding: 0 10px 35px 10px;
         height: 332px;
-        &:nth-last-child(4) {
+        &:nth-last-child(4) { // vị trí thứ 4 tính từ cuối 
             padding-top: 40px;
         }
         &:nth-last-child(3) {
@@ -80,155 +79,21 @@
         }
 
     }
-    .main__img__1 {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        padding: 1.18%;
-        width: 93%;
-        height: 68.4%;
+    
+    .main__img__1 { // tạo khung ảnh bằng padding
+        position: relative;
+        padding-top: calc((234 / 279) * 100%);
         .img__pro__1 {
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
             bottom: 0;
+            object-fit: cover;
         }
     }
-    .main__img__2 {
-        position: absolute;
-        top: 0;
-        left: 7px;
-        right: 0;
-        bottom: 0;
-        padding: 1.18%;
-        width: 93%;
-        height: 68.4%;
-        .img__pro__2 {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-        }
-    }
-    .main__img__3 {
-        position: absolute;
-        top: 0;
-        left: 10px;
-        right: 0;
-        bottom: 0;
-        padding: 1.18%;
-        width: 93%;
-        height: 68.4%;
-        .img__pro__3 {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-        }
-    }
-    .main__img__4 {
-        position: absolute;
-        top: 0;
-        left: 10px;
-        right: 0;
-        bottom: 0;
-        padding: 1.18%;
-        width: 93%;
-        height: 68.4%;
-        .img__pro__4 {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-        }
-    }
-    .main__img__5 {
-        position: absolute;
-        top: 51px;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        padding: 1.18%;
-        width: 93%;
-        height: 68.4%;
-        .img__pro__5 {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-        }
-    }
-    .main__img__6 {
-        position: absolute;
-        top: 43px;
-        left: 4px;
-        right: 0;
-        bottom: 0;
-        padding: 1.18%;
-        width: 93%;
-        height: 68.4%;
-        .img__pro__6 {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-        }
-    }
-    .main__img__7 {
-        position: absolute;
-        top: 38px;
-        left: 10px;
-        right: 0;
-        bottom: 0;
-        padding: 1.18%;
-        width: 93%;
-        height: 68.4%;
-        .img__pro__7 {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-        }
-    }
-    .main__img__8 {
-        position: absolute;
-        top: 45px;
-        left: 10px;
-        right: 0;
-        bottom: 0;
-        padding: 1.18%;
-        width: 93%;
-        height: 68.4%;
-        .img__pro__8 {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-        }
-    }
+
     .title__pro__1 {
-        position: absolute;
-        top: 236px;
-    }
-    .title__pro__2 {
-        position: absolute;
-        top: 236px;
-    }
-    .title__pro__3 {
-        position: absolute;
-        top: 236px;
-    }
-    .title__pro__4 {
         position: absolute;
         top: 236px;
     }
@@ -236,18 +101,7 @@
         position: absolute;
         top: 280px;
     }
-    .title__pro__6 {
-        position: absolute;
-        top: 280px;
-    }
-    .title__pro__7 {
-        position: absolute;
-        top: 280px;
-    }
-    .title__pro__8 {
-        position: absolute;
-        top: 280px;
-    }
+    
     .main__product-item:hover{
         transition-duration:0.5s;
         box-shadow:0 0 10px 1px #e3e3e3;
@@ -271,35 +125,37 @@
     }
     &__icon {
         position: absolute;
-        top: 17px;
-        right: 15px;
-        border: 1px solid #dddddd;
-        border-radius: 5px;
-        background-color: rgba(221,47,49,0);
-        color: @ft-color;
-        margin-top: 12px;
-        padding: 5px 7px;
-        &:first-child {
-            margin-top: 0px;
+        top: 23px;
+        right: 25px;
+       
+        .icon__pro {
+            color: @ft-color;
+            border: 1px solid @ft-color;
+            border-radius: 5px;
+            padding: 5px 3px;
+            i {
+                text-align: center;
+                width: 100%;
+                height: 100%;
+            }
+            &:hover {
+                border: 1px solid @pd-color;
+                background-color: @pd-color;
+                color: @nav-color;
+            }
         }
-        &:hover {
-            background-color: @pd-color;
-            color: @nav-color;
+        .item__2 {
+            position: relative;
+            top: 26px;
         }
-    }
-    .icon__eye {
-        margin-top: 48px;
-        
-    }
-    .icon__heart {
-        width: 18px;
-        margin-top: 96px;
-        
-    }
-    .icon__exchange {
-        width: 18px;
-        margin-top: 144px;
-        
+        .item__3 {
+            position: relative;
+            top: 52px;
+        }
+        .item__4 {
+            position: relative;
+            top: 78px;
+        }
     }
 
     &-title {
@@ -307,11 +163,13 @@
             font-weight: 400;
             font-size: 14px;
             margin: 22px 0 0 19px;
+            word-break: break-word;
         }
         span {
             font-weight: 700;
             font-size: 14px;
             margin: 19px;
+            word-break: break-word;
         }
         .p__2 {
             margin: 22px 0 0 27px;
@@ -331,12 +189,6 @@
         .span__4 {
             margin: 41px;
         } 
-        // .p__5 {
-        //     margin: 22px 0 0 27px;
-        // }
-        // .span__5 {
-        //     margin: 27px;
-        // }
         .p__6 {
             margin: 22px 0 0 27px;
         }

@@ -7,11 +7,13 @@
         filter: drop-shadow(0 0 5px rgba(0,0,0,0.3));
     }
     &-item {
+        position: relative;
         background-color: @nav-color;
-        .col (calc(100%/3));
-        padding: 0;
-        height: 250px;
+        width: calc(100% / 3);
+        padding-top: calc((200 / 928) * 100%);
         .image {
+            position: absolute;
+            top: 0;bottom: 0;left: 0;right: 0;
             width: 100%;
             height: 100%;
         }
@@ -33,7 +35,8 @@
         font-weight: 700;
         text-transform: uppercase;
         position: relative;
-        top: 46px;
+        word-break: break-word;
+        top: 52px;
     }
     .detail {
         width: 290px;
@@ -41,8 +44,9 @@
         font-size: 14px;
         color: @ft-color;
         font-weight: 400;
+        word-break: break-word;
         position: relative;
-        top: 65px;
+        top: 71px;
     }
     .icon__2 {
         top: 43px;
@@ -56,6 +60,6 @@
     .detail__3 {
         width: 307px;
         margin: 0 44px;
-        top: 66px;
+        top: 72px;
     }
 }

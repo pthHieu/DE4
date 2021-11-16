@@ -3,99 +3,73 @@
     &__top {
         font-family: "Poppins";
         text-align: center;
-        margin-top: 35px;
-        padding-top: 101px;
-        padding-bottom: 32px;
+        margin-top: 25px;
+        padding-top: 97px;
+        height: 570px;
         &__logo {
+            text-align: center;
             margin-bottom: 25px;
             img {
                 width: auto;
             }
         }
         &__text {
-            padding: 0 195px;
-            font-size: 14px;
-            line-height: 24px;
             color: @ft-color;
             font-weight: 400;
+            word-break: break-word;
+            margin: 0 200px;
+            font-size: 14px;
+            P {
+                line-height: 2;
+            }
         }
         &__icon {
-            margin-top: 37px;
-            margin-left: 11px;
-            ul {
-                display: flex;
-                align-items: center;
-                margin-left: 454px;
+            position: relative;
+            top: 21px;
+            left: 5px;
+            font-size: 18px;
+            a {
+                margin: 0 20px;
                 i {
-                    font-size: 18px;
-                    line-height: 30px;
                     color: @ft-color;
-                    font-weight: 400;
-                    padding: 0 23px;
-                    &:nth-child(2) {
-                        padding-left: 24px;
-                        padding-right: 16px;
-                    }
-                    &:nth-child(3) {
-                        padding-left: 22px;
-                        padding-right: 21px;
-                    }
-                    &:hover {
-                        color: @pd-color;
-                    }
                 }
             }
         }
         &__nav {
-            display: flex;
-            text-align: left;
-            margin-top: 97px;
-            h4 {
-                margin-left: -1px;
-                text-transform: uppercase;
-                font-size: 18px;
-                line-height: 30px;
-                color: @nav-color;
-                font-weight: 700;
-            }
-            a {
-                font-size: 14px;
-                line-height: 40px;
-                color: @ft-color;
-                font-weight: 400;
-                &:hover {
-                    color: @pd-color;
+           display: flex;
+           position: relative;
+           top: 132px;
+            .nav__right {
+                width: 25%;
+                padding: 0 15px;
+                &:first-child {
+                    padding: 0;
                 }
-            }
-            .nav__left {
-                ul {
-                    margin-top: -7px;
-                    li {
-                        &:first-child {
-                            i {
-                                margin-right: 22px;
-                            }
-                        }
-                    }
+                h4 {
+                    font-size: 18px;
+                    font-weight: 700;
+                    text-align: initial;
+                    text-transform: uppercase;
+                    color: @ft-color;
+                    margin: 0;
+                    line-height: 3;
+                }
+                a {
+                    display: flex;
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: @ft-color;
+                    text-align: center;
+                    line-height: 3;
+                    word-break: break-word;
                     i {
+                        line-height: 3;
                         margin-right: 15px;
                     }
                 }
             }
-            .nav__right {
-                display: flex;
-                margin-left: 38px;
-                ul {
-                    margin-top: 15px;
-                }
-                &__item {
-                    margin-right: 175px;
-                    &:last-child {
-                        margin-right: 0px;
-                    }
-                }
-            }
         }
+        
     }
     &__bottom {
         background-color: @end-color;

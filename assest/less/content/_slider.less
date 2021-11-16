@@ -8,7 +8,7 @@
                 &::before {
                     font-size: 11px;
                     color: @ft-color;
-                    opacity: .65;
+                    opacity: .65; // độ mờ 0.65
                 }
             }
         }
@@ -29,8 +29,11 @@
             text-align: center;
         }
         &-img {
-            margin-left: 48%;
-            margin-right: 50%;
+            img { // căn chỉnh ảnh ra chính giữa
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+            }
         }
         &-text {
             padding-top: 7px;
@@ -47,12 +50,12 @@
             align-tracks: 0,1em;
             font-weight: 700;
             text-align: center;
-            text-transform: uppercase;
+            text-transform: uppercase; // css text in hoa
         }
         &-text2 {
             margin-top: -14px;
             font-size: 14px;
-            font-weight: 400;
+            font-weight: 400; // độ đậm nhạt của chữ
             color: @ft-color;
             text-align: center;
         }
@@ -60,29 +63,25 @@
 }
 .brand {
     .row {
-        margin-top: 137px;
-        padding-top: 35px;
+        margin-top: 138px;
+        padding-top: 50px;
         border-top: 1px solid @ft-color;
     }
     &__img {
-        .col (calc(100%/6));
+        .col (calc(100%/6)); // col chia khối với padding 15px
+        position: relative;
+        padding-top: calc((71 / 1123) * 100%);
+        img {
+            position: absolute;
+            top: 0;left: 0;right: 0;bottom: 22px;
+            margin: auto;
+        }
+        
     }
-    .img1 {
-        padding: 3px 0 0 21px;
+    &:first-child {
+        padding-left: 0;
     }
-    .img2 {
-        padding: 9px 0 0 18px;
-    }
-    .img3 {
-        padding: 3px 0 0 22px;
-    }
-    .img4 {
-        padding: 20px 0 0 17px;
-    }
-    .img5 {
-        padding: 15px 0 0 18px;
-    }
-    .img6 {
-        padding: 8px 0 0 17px;
+    &:last-child {
+        padding-right: 0;
     }
 }
