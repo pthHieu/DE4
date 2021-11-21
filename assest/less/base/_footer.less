@@ -5,7 +5,6 @@
         text-align: center;
         margin-top: 25px;
         padding-top: 97px;
-        height: 570px;
         &__logo {
             text-align: center;
             margin-bottom: 25px;
@@ -36,37 +35,36 @@
             }
         }
         &__nav {
-           display: flex;
-           position: relative;
-           top: 132px;
+            margin-top: 133px;
+            margin-bottom: 35px;
             .nav__right {
-                width: 25%;
-                padding: 0 15px;
-                &:first-child {
-                    padding: 0;
-                }
+                .col(25%);
+                // margin-top: 133px;
                 h4 {
                     font-size: 18px;
                     font-weight: 700;
-                    text-align: initial;
+                    text-align: initial; // text ra đầu dòng
                     text-transform: uppercase;
                     color: @ft-color;
                     margin: 0;
                     line-height: 3;
                 }
-                a {
-                    display: flex;
-                    font-size: 14px;
-                    font-weight: 400;
-                    color: @ft-color;
-                    text-align: center;
-                    line-height: 3;
-                    word-break: break-word;
-                    i {
+                &__icon {
+                    display: grid;
+                    a {
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: @ft-color;
+                        text-align: initial;
                         line-height: 3;
-                        margin-right: 15px;
+                        word-break: break-word;
+                        i {
+                            line-height: 3;
+                            margin-right: 15px;
+                        }
                     }
                 }
+               
             }
         }
         

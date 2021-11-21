@@ -1,6 +1,9 @@
 .background {
-    position: relative;
+    background-image: url(../img/background.png);
     height: 950px;
+    background-repeat: no-repeat;
+    background-position: right 30% top;
+    position: relative;
     &-content {
         position: absolute;
         top: 50%;
@@ -12,14 +15,14 @@
         font-weight: 700;
         color: @nav-color;
         position: absolute;
-        bottom: 95px;
+        bottom: 91px;
     }
     &-sub {
         font-size: 40px;
         font-weight: 700;
         color: @nav-color;
         position: absolute;
-        bottom: 42px;
+        bottom: 40px;
     }
     &-text {
         max-width: 530px;
@@ -28,7 +31,8 @@
         color: @nav-color;
         word-break: break-word;
         position: absolute;
-        bottom: -44px;
+        bottom: -53px;
+        line-height: 1.8;
     }
     &-a {
         text-transform: uppercase;
@@ -39,7 +43,7 @@
         padding: 13px 47px;
         text-decoration: none;
         position: absolute;
-        top: 105px;
+        top: 108px;
         &:hover {
             color: @nav-color;
         }
